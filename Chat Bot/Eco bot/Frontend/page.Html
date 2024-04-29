@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savor Delight Eatery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .menu-item-text {
+            padding: 10px;
+        }
+
+        .menu-item-text h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .menu-item-text p {
+            margin-top: 5px;
+            color: #666;
+        }
+
+        .price {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 5px 0;
+            margin-top: -1px; /* To align the price bar with the image */
+        }
+
+        .price span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .disclaimer {
+            text-align: center;
+            margin-top: 50px;
+            color: #666;
+        }
+
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .chatbot-iframe {
+            width: 300px;
+            height: 500px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Savor Delight Eatery</h1>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="tea.jpg" alt="Tea">
+                <div class="menu-item-text">
+                    <h3>Tea</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 6</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="chola-puri.jpg" alt="Chola Poori">
+                <div class="menu-item-text">
+                    <h3>Chola Poori</h3>
+                    <p>Deep-fried bread served with chickpea curry</p>
+                </div>
+                <div class="price"><span>Rs. 7</span></div>
+            </div>
+            <!-- Repeat the above div for each menu item -->
+            <!-- Example for each menu item: -->
+            <div class="menu-item">
+                <img src="Pizza.jpg" alt="Pizza">
+                <div class="menu-item-text">
+                    <h3>Pizza</h3>
+                    <p>Italian classic with various toppings</p>
+                </div>
+                <div class="price"><span>Rs. 8</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="Mango-Lassi.jpg" alt="Mango Lassi">
+                <div class="menu-item-text">
+                    <h3>Mango Lassi</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 5</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="plain-dosa.jpg" alt="Plain Dosa">
+                <div class="menu-item-text">
+                    <h3>Plain Dosa</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 6</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="masala-dosa.jpg" alt="Masala Dosa">
+                <div class="menu-item-text">
+                    <h3>Masala Dosa</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 9</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="ghee-roast.jpg" alt="Ghee Roast">
+                <div class="menu-item-text">
+                    <h3>Ghee Roast</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 8</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="veg-biryani.jpeg" alt="Vegetable Biriyani">
+                <div class="menu-item-text">
+                    <h3>Vegetable Biriyani</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 10</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="rose-milk.jpg" alt="Rose Milk">
+                <div class="menu-item-text">
+                    <h3>Rose Milk</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 5</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="Onion-Utappam.jfif" alt="Onion Utappam">
+                <div class="menu-item-text">
+                    <h3>Onion Utappam</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 9</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="rava-dosa.jpg" alt="Rava Dosa">
+                <div class="menu-item-text">
+                    <h3>Rava Dosa</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 7</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="coffee.jpg" alt="Coffee">
+                <div class="menu-item-text">
+                    <h3>Coffee</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 5</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="Chapathi-Kuruma.jfif" alt="Chapathi Kuruma">
+                <div class="menu-item-text">
+                    <h3>Chapathi Kuruma</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 8</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="fried-rice.jpg" alt="Veg Fried Rice">
+                <div class="menu-item-text">
+                    <h3>Veg Fried Rice</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 15</span></div>
+            </div>
+            <div class="menu-item">
+                <img src="veg-fried-noodles.jfif" alt="Veg Fried Noodles">
+                <div class="menu-item-text">
+                    <h3>Veg Fried Noodles</h3>
+                    <p>A refreshing beverage</p>
+                </div>
+                <div class="price"><span>Rs. 15</span></div>
+            </div>
+            <!-- Repeat for each menu item -->
+        </div>
+        <div class="chatbot-container">
+            <iframe width="400" height="800" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/79660557-9862-47b8-b5ea-e62f10ab552c"></iframe>
+        </div>
+    </div>
+        <p class="disclaimer">This website is created for project purposes only and not for production.</p>
+    </div>
+</body>
+</html>

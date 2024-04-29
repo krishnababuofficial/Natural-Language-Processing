@@ -1,0 +1,4 @@
+1. Terminal: uvicorn main:app --reload
+2. Cmd_Pmpt: [ngrok]  Got to the specific path--->ngrok http 8000 this link will be given by running the above code in Terminal
+						  will recive a link "https://56f2-2401-4900-1c29-2a85-f1bf-185d-9d65-fd2d.ngrok-free.app -> http://localhost:8000"
+past the link in Fulfillment.
