@@ -21,7 +21,7 @@ This repository explores sentiment analysis on the IMDB dataset using FastText, 
 
 1. **Clone the repository :**
    ```bash
-   export git clone https://github.com/your-username/imdb-sentiment-analysis-fasttext.git
+   git clone https://github.com/your-username/imdb-sentiment-analysis-fasttext.git
    ```
 Use code with caution.
 
