@@ -27,16 +27,17 @@ Use code with caution.
 
 2.  **Install dependencies :**
     ```bash
-    export pip install pandas numpy seaborn matplotlib fasttext scikit-learn spacy
+    pip install pandas numpy seaborn matplotlib fasttext scikit-learn spacy
+    ```
 Use code with caution.
 
 3. **Download the IMDB dataset :**
     ```bash
-    export Download the "IMDB Dataset.csv" file (available on Kaggle or similar datasets) and place it in the same directory as the code.
+    Download the "IMDB Dataset.csv" file (available on Kaggle or similar datasets) and place it in the same directory as the code.
     ```
 4. **Run the code :**
     ```bash
-    export python sentiment_analysis.py
+    python sentiment_analysis.py
     ```
 Use code with caution.
 Bash
