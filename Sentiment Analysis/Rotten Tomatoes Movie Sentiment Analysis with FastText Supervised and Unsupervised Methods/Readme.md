@@ -50,7 +50,7 @@ The preprocessed data is split into training, validation, and test sets [Explain
 
 ## Technologies Used
 * Python
-* pandas, NumPy, spaCy, FastText, scikit-learn (if used for additional classifiers)
+* pandas, NumPy, spaCy, FastText
 * Jupyter Notebook, Git
 
 ### License
